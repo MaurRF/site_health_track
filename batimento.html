@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+
+    <title>Heath Track</title>
+  </head>
+
+  <body style="background-color: rgb(233, 230, 230);">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Heath Track</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="painel.html">Painel de Controle</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Atualizar</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="alimento.html">Alimentos</a></li>
+                  <li><a class="dropdown-item" href="batimento.html">Batimentos</a></li>
+                  <li><a class="dropdown-item" href="exercicio.html">Exercícios</a></li>
+                  <li><a class="dropdown-item" href="medidas.html">Peso/Altura</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="painel.html">Painel</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procurar</button>
+            </form>
+            
+          </div>
+          
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastrar</a>
+            </li>
+        
+      </nav>
+
+  
+      <br><br>
+
+      <div class="container">
+
+        <div class="row">
+            <div class="col" color><h4><b>INCLUIR BATIMENTO</b></h4></div>
+            
+          </div>
+          
+          <br>
+        <div class="row">
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <form class="row g-3">
+                <div class="col-3">
+                    <label for="inputAddress" class="form-label">Data</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="19/06/2021">
+                    
+                  </div>
+
+                  <div class="col-3">
+                    <label for="inputAddress" class="form-label">Batimentos</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="90">
+                  </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success" href="alimento.html">Incluir</button>
+                </div>
+              </form>
+            
+            </div>
+        </div>
+      </div>
+
+
+      <br><br>
+
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data</th>
+            <th scope="col">Batimento</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>15/06/2021</td>
+            <td>97</td>
+            <td></td>
+            <th scope="col"><button type="button" class="btn btn-warning">Editar</button></th>
+            <th scope="col"><button type="button" class="btn btn-danger">Excluir</button></th>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>16/06/2021</td>
+            <td>101</td>
+            <td></td>
+            <th scope="col"><button type="button" class="btn btn-warning">Editar</button></th>
+            <th scope="col"><button type="button" class="btn btn-danger">Excluir</button></th>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>17/06/2021</td>
+            <td>200</td>
+            <td></td>
+            <th scope="col"><button type="button" class="btn btn-warning">Editar</button></th>
+            <th scope="col"><button type="button" class="btn btn-danger">Excluir</button></th>
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
